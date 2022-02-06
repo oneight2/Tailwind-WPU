@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -12,19 +12,32 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <h1 className="font-bold text-7xl mb-3 ">
+          Welcome to{" "}
+          <a
+            href="https://nextjs.org"
+            className="bg-gradient-to-r from-teal-300 to-blue-300 bg-clip-text text-transparent "
+          >
+            Next.js!
+          </a>
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <p className="font-normal text-2xl">
+          Get started by editing{" "}
+          <code className="font-mono bg-gray-100 px-2 py-1">
+            pages/index.js
+          </code>
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+        <div className="flex flex-wrap max-w-screen-md justify-center items-center">
+          <a
+            href="https://nextjs.org/docs"
+            className="m-4 p-6 border-[1px] max-w-[45%] border-gray-200 rounded-xl hover:border-blue-600 hover:text-blue-600"
+          >
+            <h2 className="text-2xl mb-4">Documentation &rarr;</h2>
+            <p className="text-xl">
+              Find in-depth information about Next.js features and API.
+            </p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
@@ -58,12 +71,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
