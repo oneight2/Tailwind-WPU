@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .card{
+        @apply m-4 p-6 border-[1px] max-w-[45%] border-gray-200 rounded-xl hover:border-blue-600 hover:text-blue-600
+    }
+}

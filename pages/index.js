@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Card from "../components/card";
 
 export default function Home() {
   return (
@@ -30,15 +31,9 @@ export default function Home() {
         </p>
 
         <div className="flex flex-wrap max-w-screen-md justify-center items-center">
-          <a
-            href="https://nextjs.org/docs"
-            className="m-4 p-6 border-[1px] max-w-[45%] border-gray-200 rounded-xl hover:border-blue-600 hover:text-blue-600"
-          >
-            <h2 className="text-2xl mb-4">Documentation &rarr;</h2>
-            <p className="text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
+          <Card />
+          <Card />
+          <Card />
         </div>
       </main>
 
